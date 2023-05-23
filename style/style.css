@@ -10,9 +10,13 @@ body{
     height: 100vh;
 }
 
+/* H1 */
+
 .main-title{
     color: #385555;
 }
+
+/* CONTAINER */
 
 .div-cont{
     background-color: white;
@@ -22,4 +26,63 @@ body{
     overflow-y: auto;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* LI QUE COBRE OS ITEMS*/
+
+.list-item{
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 16px;
+    transition: 0.5s;
+}
+
+.list-item:hover{
+    background-color: #e8e8e8;
+}
+
+/* FOTO DE CAPA DO CONTATO*/
+
+.list-item__image img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.list-item__content{
+    padding: 0 20px;
+    /*width: 100%;*/
+    flex-grow: 1; /* ocupa o espaço que sobra da LI*/
+}
+
+/* NOME DO CONTATO */
+
+.list-item__name{
+    font-size: 20px;
+    color: #385555;
+    margin: 0;
+}
+
+/* EMAIL DO CONTATO */
+
+.list-item__email{
+    margin-top: 5px 0 0;
+    color: #aaa;
+}
+
+.list-item__action{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    /*display: none;*/
+    opacity: .0;
+}
+
+.list-item:hover .list-item__action{
+    opacity: .3;
 }
